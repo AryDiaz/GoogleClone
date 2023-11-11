@@ -1,0 +1,292 @@
+body{
+/*EL HTML FUERA DE LA CARPETA CSS*/
+background-color: aliceblue;
+/*Margen del elemento HACIA AFUERA*/
+margin: 0;
+/*Margen hacia dentro TIPO SANGRÍA (?*/
+padding: 0;
+/*FUENTES*/
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+
+}
+
+/*NAVEGACIÓN*/
+header{
+/*background-color: aqua;*/
+/*ANCHO*/
+width: 100%
+/*ALTO*/
+height: 60px;
+
+}
+
+/*ACCEDER AL ELEMENTO NAV DE HEADER*/
+header nav{
+
+/*JUSTIFCAR a la derecha*
+Nos habilita usar flex-end flex-start*/
+display: flex;
+justify-content: flex-end;
+/*background-color: pink;*/
+
+}
+/*ACCEDER A CLASE*/
+header nav .nav-right-section {
+    /*background-color: chartreuse;*/
+    width: 250px;
+    height: auto;
+    /*Eliminar puntos*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*CENTRAR VERTICALMENTE*/
+    align-items: center;
+}
+
+a{
+/*ELIMINAR LÍNEA DEBAJO DEL TEXTO*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+
+/*ÍCONO MENÚ*/
+nav .nav-right-section .menu{
+
+background-image: url(https://cdn-icons-png.flaticon.com/128/17/17704.png) ;
+
+/*QUE LA IMAGEN ESTÉ CONTENIDA EN ELE ELEMENTO MÁS GRANDE*/
+background-size: contain;
+width: 20px;
+height: 20px;
+background-repeat: no-repeat;
+
+}
+
+nav .nav-right-section img{
+/*REDONDEAR BORDES*/
+    border-radius: 100%;
+    /*CAMBIAR TAMAÑO DE IMAGEN*/
+    width: 55% ;
+    margin-left: 20px;
+}
+
+
+/*MAIN*/
+main{
+/*AGREGAR ESPECIO ENTRE HEADER Y MAIN*/
+
+    margin-top: 7%;
+    text-align: center;
+}
+
+main .main-logo{
+width: 300px;
+/*CENTRAR - MARGEN AUTO*/
+margin: 0 auto;
+/*SINTAXIS ALTERNATIVA = MARGEN - ARRIBA DERECHA ABAJO IZQUIERDA*/
+padding-left: 2%;
+}
+
+main .main-logo img{
+
+height: 100px;
+}
+
+main .main-input{
+
+width: 530px;
+/*CENTRAR AUTO*/
+margin: 0 auto;
+
+}
+
+main .main-input-container{
+    margin-top: 5%;
+/*ANCHO || ESTILO|| COLOR*/
+/*HAY VARIOS ESTILOS PARA LA LINEA DEL CONTAINER*/
+border: 1px solid #dfe1e5;
+/*REDONDEAR*/
+border-radius: 10px;
+/*ANCHO*/
+width: 580px;
+height: 40px;
+
+}
+
+main .main-input-container:hover{
+box-shadow: 8px 8px 8px 8px #e5e5e5;
+}
+
+main .main-input input{
+    height: 37px;
+  /*QUITAR BORDE*/
+  border: none;
+  /*QUITAR BORDE cuando esté activo el input*/
+  outline: none;
+  width: 470px;
+}
+
+main .main-input .search-icon {
+
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    width: 45px;
+    background-repeat: no-repeat;
+    height: 45px;
+    padding-left: 20px;
+    background-position: center;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg) ;
+   background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10%;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+}
+/*AGREGAR LINKS*/
+
+main .botones{
+padding-top: 1%;
+width: 150px; /* Ajusta el ancho según sea necesario */
+height: 40px; /* Ajusta la altura según sea necesario */
+display: flex;
+justify-content: space-around;
+
+}
+
+main .botones .Buscar button
+{
+    padding: 10px 20px; 
+    background-color: azure; /* Color de fondo del botón */
+    border: none;
+    outline: gray;
+    border-radius: 5px; /* Bordes redondeados */
+    color: black; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    font-size: 15px; /* Tamaño del texto */
+    width: 200px; 
+    height: 40px; 
+}
+main .botones .Buscar button:hover{
+    background-color: #e5e5e5;
+}
+
+main .botones .Suerte button {
+    padding: 10px 20px; 
+    background-color: azure; /* Color de fondo del botón */
+    border: none;
+    outline: #e5e5e5;
+    border-radius: 5px; /* Bordes redondeados */
+    color: black; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    font-size: 15px; /* Tamaño del texto */
+    width: 200px; 
+    height: 40px; 
+}
+main .botones .Suerte button:hover{
+    background-color: #e3e4e5;
+}
+
+
+main .botones .Buscar{
+padding-top: 5%;
+padding-left: 937%;
+padding-right: 7%;
+border: none;
+outline: gray
+   
+}
+
+main .botones .Suerte{
+padding-top: 5%;
+padding-right: 20%;
+outline: gray
+}
+
+main a{
+color:black
+}
+
+
+ .Centro{
+padding-top: 3%;
+background-color:azure
+justify-content: center;
+padding-left: 39%;
+font-size: 12px;
+padding-bottom: 12%
+
+}
+
+ .Centro a{
+color: #828282;
+ }
+
+ footer .containerp{
+
+    background-color: #e3e4e5;
+    padding-left: 1%;
+    width: 99%;
+    height: 40px;
+    border: 1px solid azure; /*Colocar del color de la separación*/
+  
+ }
+
+
+footer p {
+   
+    padding-left: 2%;
+    font-size: 15px;
+    color: black
+
+}
+
+footer a{
+
+    padding-left: 2%;
+    font-size: 15px;
+    color: black
+}
+
+footer .Linksf{
+    padding-top: 1px;
+    color: black
+    padding-left: 2%;
+    font-size: 15px;
+ 
+}
+
+footer .containerLinksf{
+    background-color: #e3e4e5;
+    width: 99%;
+    height: 40px;
+    padding-left: 1%;
+    line-height: 40px;
+
+}
+
+.containerLinksf a.puntosXD {
+    color: #eeeeee;
+}
+
+
+
